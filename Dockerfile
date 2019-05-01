@@ -4,6 +4,7 @@ USER root
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-venv
 RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade pytest
 
