@@ -7,7 +7,7 @@ pip3 install -r hello_world/requirements.txt
 pip3 install pytest
 
 # Execute tests
-pytest tests
+python -m pytest tests
 pytest_exit_code=$?
 
 # Deploy if the tests passed
