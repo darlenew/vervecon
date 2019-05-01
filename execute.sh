@@ -3,17 +3,20 @@
 # Activate virtual environment
 python3 -m venv vervecon
 source vervecon/bin/activate
-pip3 install -r hello_world/requirements.txt
-pip3 install pytest
+pip install -r hello_world/requirements.txt
+pip install pytest
 
 # Execute tests
 python -m pytest tests
 pytest_exit_code=$?
 
 # Deploy if the tests passed
-if [ $? -eq 0 ]
+if [ $pytest_exit_code -eq 0 ]
 then
-   echo "blah blah blah"
+   echo "deploy here"
+   deploy_exit_code=$?
+else
+   deploy_exit_code=$pytest_exit_code
 fi
-deploy_exit_code=$?
+
 exit "$deploy_exit_code"
