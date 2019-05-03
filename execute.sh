@@ -19,7 +19,6 @@ pytest_exit_code=$?
 if [ $pytest_exit_code -eq 0 ]
 then
    cd $APP_NAME
-   ls
    gcloud auth activate-service-account $SVC_ACCOUNT --key-file $SVC_KEY_JSON
    gcloud config set project $GCP_PROJECT
    gcloud app deploy --project=$GCP_PROJECT
