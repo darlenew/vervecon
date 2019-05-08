@@ -8,7 +8,7 @@ SVC_KEY_JSON="/service-key.json"
 # Activate virtual environment
 python3 -m venv vervecon
 source vervecon/bin/activate
-pip install -r requirements.txt
+pip install -r hello_world/requirements.txt
 pip install pytest
 
 # Execute tests
