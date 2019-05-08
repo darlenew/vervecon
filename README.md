@@ -1,5 +1,6 @@
-# Vervecon 
-Slides and code samples for Vervecon 2019 - Automation Demystified
+# Vervecon 2019: Automation Demystified
 
-- application
-- tests
+Presentation slides: slides.pdf
+Hello World application: hello_world/
+Test code: tests/
+Jenkins Execute Shell: execute.sh
